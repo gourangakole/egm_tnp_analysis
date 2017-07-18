@@ -5,6 +5,8 @@
 
 > git clone -b egm_tnp_Moriond17_v2.0 git@github.com:fcouderc/egm_tnp_analysis.git 
 
+> or checmy out my branch
+
 > cd egm_tnp_analysis
 
 no compilation is required (this will auto compile the C++ code automatically) but you need ROOT and RooFit installed.
@@ -15,7 +17,7 @@ This can be run on a laptop, does not require cmssw environment (still requires 
 
 First you need to setup the environment, especially on lxplus (do not use cmsenv from cmssw)
 
-> source etc/scritps/setup.sh
+> source etc/scripts/setup.sh
 
 Package to handle analysis of tnp trees. The main tool is the python fitter
 

@@ -55,9 +55,23 @@ if not samplesDef['tagSel'] is None: samplesDef['tagSel'].set_weight(weightName)
 #############################################################
 ########## bining definition  [can be nD bining]
 #############################################################
+
+# Default example bins
+#biningDef = [
+#   { 'var' : 'probe_sc_eta' , 'type': 'float', 'bins': [-2.5,-2.0,-1.566,-1.4442, -0.8, 0.0, 0.8, 1.4442, 1.566, 2.0, 2.5] },
+#   { 'var' : 'probe_Ele_pt' , 'type': 'float', 'bins': [10,20.0,30,40,50,200] },
+#]
+
+# Rereco 2017 EB
+#biningDef = [
+#    { 'var' : 'probe_Pho_r9' , 'type': 'float', 'bins': [0,0.85,1] },
+#    { 'var' : 'probe_sc_abseta' , 'type': 'float', 'bins': [0,1.479] },
+#]
+
+#temporary check
 biningDef = [
-   { 'var' : 'probe_sc_eta' , 'type': 'float', 'bins': [-2.5,-2.0,-1.566,-1.4442, -0.8, 0.0, 0.8, 1.4442, 1.566, 2.0, 2.5] },
-   { 'var' : 'probe_Ele_pt' , 'type': 'float', 'bins': [10,20.0,30,40,50,200] },
+    { 'var' : 'probe_Ele_r9' , 'type': 'float', 'bins': [0,0.85,1] },
+    { 'var' : 'probe_sc_abseta' , 'type': 'float', 'bins': [0,1.479] },
 ]
 
 #############################################################
@@ -81,7 +95,8 @@ additionalCuts = {
 }
 
 #### or remove any additional cut (default)
-#additionalCuts = None
+#Rereco 2017
+additionalCuts = None
 
 #############################################################
 ########## fitting params to tune fit by hand if necessary

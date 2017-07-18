@@ -74,7 +74,10 @@ Ichep2016_80X = {
     'data_Run2016D' : tnpSample('data_Run2016D' , eosDir+'data/TnPTree_SingleElectron_Run2016D.root' , lumi = 4.353 ),
 }
 
-eosDir_v0 = 'eos/cms/store/group/phys_egamma/tnp/80X/'
+# extra line to access root file (now directly /eos/...)
+eosDir_v0 = '/eos/cms/store/group/phys_egamma/tnp/80X/'
+# eosDir_v0 = 'eos/cms/store/group/phys_egamma/tnp/80X/'
+
 ICHEP2016 = {
     'mc_DY_madgraph_ele' : tnpSample('mc_DY_madgraph_ele', eosDir_v0 + 'Photons_76Xids/elev2/mc/TnPTree_DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root' ,
                                      isMC = True, nEvts = 36311064 ),
