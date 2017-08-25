@@ -75,7 +75,7 @@ def makePassFailHistograms( sample, flag, bindef, var ):
             eff   = passI / (passI+failI)
             e_eff = math.sqrt(passI*passI*efail*efail + failI*failI*epass*epass) / (itot*itot)
         print cuts
-        print '    ==> pass: %.1f +/- %.1f ; fail : %.1f +/- %.1f : eff: %1.3f +/- %1.3f' % (passI,epass,failI,efail,eff,e_eff)
+        print '    ==> pass: %.1f +/- %.1f ; fail : %.1f +/- %.1f : eff: %1.4f +/- %1.4f' % (passI,epass,failI,efail,eff,e_eff)
     outfile.Close()
 
 
